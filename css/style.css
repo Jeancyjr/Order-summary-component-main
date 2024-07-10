@@ -1,0 +1,161 @@
+:root {
+  /* Primary colors */
+  --Pale-blue-color: hsl(225, 100%, 94%);
+  --Bright-blue-color: hsl(245, 75%, 52%);
+
+  /* Neutral colors */
+  --Very-pale-blue-color: hsl(225, 100%, 98%);
+  --Desaturated-blue-color: hsl(224, 23%, 55%);
+  --Dark-blue-color: hsl(223, 47%, 23%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--Pale-blue-color) url("../images/pattern-background-desktop.svg") no-repeat center center;
+  background-size: auto;
+  background-position: top;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  color: var(--Desaturated-blue-color);
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--Desaturated-blue-color);
+}
+
+/* CARD STYLING */
+.card-form {
+  max-width: 450px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  box-shadow: 4px 8px 14px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  margin-top: 3rem;
+}
+
+.card-form picture img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #fff;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.card-text h1 {
+  color: var(--Dark-blue-color);
+  font-size: 1.8rem;
+  font-weight: 900;
+  margin-top: 2.5rem;
+}
+
+.card-text p {
+  width: 300px;
+  text-align: center;
+  line-height: 1.5;
+  margin-top: 1rem;
+}
+
+.card-plan-flex {
+  display: flex;
+  align-items: center;
+}
+
+.card-plan {
+  background: var(--Very-pale-blue-color);
+  width: 360px;
+  height: 85px;
+  padding: 20px;
+  gap: 20px;
+  border-radius: 10px;
+  margin-top: 1.5rem;
+}
+
+.annual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.annual h4 {
+  color: var(--Dark-blue-color);
+  font-weight: 900;
+}
+
+.annual p {
+  font-weight: 500;
+  margin-top: 0.2rem;
+}
+
+.annual ul li a {
+  color: var(--Bright-blue-color);
+  font-weight: 700;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+.annual ul li a:hover {
+  color: var(--Dark-blue-color);
+}
+
+/* BTN STYLING */
+.proceed {
+  margin-top: 3rem;
+}
+
+.btn-1 {
+  background: var(--Bright-blue-color);
+  color: var(--Very-pale-blue-color);
+  font-weight: 700;
+  padding: 0.9rem 6.4rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px 14px 0 rgba(0, 0, 0, 0.4);
+}
+
+.proceed .btn-list .btn-item .btn-1 {
+  transition: 0.5s;
+}
+
+.proceed .btn-list .btn-item .btn-1:hover  {
+  background: var(--Dark-blue-color);
+  color: var(--Very-pale-blue-color);
+}
+
+.proceed ul:last-child {
+  font-weight: 700;
+  margin-top: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.proceed ul li a:last-child:hover {
+  transition: all 0.5s ease-in-out;
+}
+
+.proceed ul li a:last-child:hover {
+  color: var(--Dark-blue-color);
+}
