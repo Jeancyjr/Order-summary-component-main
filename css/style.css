@@ -45,7 +45,7 @@ a {
   grid-template-columns: 1fr;
   box-shadow: 4px 8px 14px 0 rgba(0, 0, 0, 0.1);
   border-radius: 20px;
-  margin-top: 3rem;
+  margin-top: 5rem;
 }
 
 .card-form picture img {
